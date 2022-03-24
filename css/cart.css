@@ -1,0 +1,131 @@
+.form__cart ul{
+    display:flex;  
+    align-items:center; 
+    justify-content: space-between;
+}
+.form__cart{
+    max-width:1140px;
+    margin: auto;
+}
+.form__cart li{
+    padding: 20px 20px;
+    font-size: 16px;
+}
+.form__cart-product{
+    width: 767px;
+    text-align: center; 
+}
+.form__cart-price-amount-avg{
+    display: flex;
+    width:373px;
+    justify-content:space-between;
+}
+.form__cart-info{
+    display: block;   
+    display: flex;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 10px 0;
+
+}
+.form__cart-info-product{
+    width: 760px;
+    display: flex;
+    justify-content:center;
+}
+.form__cart-info-name{
+    font-size: 20px;
+}
+.form__cart-info-price-amount-avg{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.form__cart-info-amount{
+    padding-left: 10px;
+}
+.form__cart-info-price-amount-avg .form__cart-info-amount-btn {
+    padding: 10px 10px;
+    background-color: #fff;
+}
+.form__cart-info-price-amount-avg .form__cart-info-amount-btn.minus,
+.form__cart-info-price-amount-avg .form__cart-info-amount-btn.plus {
+    border: none ;
+    background-color: #fff ;
+}
+.form__cart-info-price-amount-avg .form__cart-info-amount-btn.number {
+    border: 1px solid #d8d8d8;
+}
+.form__cart-info-price,
+.form__cart-info-total
+{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.form__cart-info-exit{
+    padding:  10px ;
+}
+.form__cart-info-exit{
+    font-size: 14px;
+}
+.form__cart-note-totalMoney{
+    margin-top: 40px;
+}
+.form__cart-note-totalMoney h3{
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.form__cart-note{
+    float: left;    
+}
+.form__cart-note-totalMoney input{
+    height: 160px;
+    width: 500px;
+    border: 1px solid #d8d8d8;
+}
+.form__cart-totalMoney {
+    text-align: right;
+    margin-bottom: 50px;
+}
+.form__cart-totalMoney span{
+    font-size: 28px;
+    font-weight: bold;
+}
+.form__cart-totalMoney p{
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    padding-bottom: 66px;
+}
+.form__cart-totalMoney-btn {
+    padding: 16px 10px;
+    letter-spacing:1.2px;
+    border: 1px solid #78CCCD;
+
+}
+
+.form__cart-totalMoney-btn.continueBuy
+{
+    width: 235px;
+    background-color: #fff;
+    color: #78CCCD;
+
+}
+.form__cart-totalMoney-btn.pay
+{
+    width: 165px;
+    background-color: #78CCCD;
+    color:#fff;
+}
+.form__cart-totalMoney-btn.continueBuy:hover
+{
+    background-color: #78CCCD;
+    color:#fff;
+}
+.form__cart-totalMoney-btn.pay:hover
+{
+    background-color: #53BEBF;
+}

@@ -1,0 +1,23 @@
+.addCart{
+    font-size: 1.75em;
+    width: 49%;
+    margin-top: 20px;
+    /* border: 1px solid #FF000; */
+    padding: 10px 10px;
+    
+    background: white;
+    color: red;
+    border: 1px solid;
+}
+.buyNow{
+    font-size: 1.75em;
+    width: 49%;
+    margin-top: 20px;
+    /* border: 1px solid #FF000; */
+    padding: 10px 10px;
+
+    color: back;
+    background: white;
+    border: 1px solid;
+    margin-bottom:20px
+}

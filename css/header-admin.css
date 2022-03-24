@@ -1,0 +1,9 @@
+.header-admin{
+    display:flex;
+    max-width:1200px;
+    margin: 20px auto;
+    align-items:center ;
+}
+.header-admin-logo img{
+    width: 50%;
+}
