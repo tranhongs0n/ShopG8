@@ -93,7 +93,7 @@
                                             </button>
                                         </div>
                                         <div class="form__cart-info-total">
-                                            <?php echo '<span>'.$tongTien.'</span>';?>
+                                            <?php echo '<span>'.$tien.'</span>';?>
                                         </div>
                                     </div>
                                     <div class="form__cart-info-exit">

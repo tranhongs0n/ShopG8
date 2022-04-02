@@ -1,6 +1,6 @@
 <?php 
     include 'connect.php';
-    $user = isset($_SESSION['user']) ? $user = $_SESSION['user']:[];
+    $user = isset($_SESSION['user']) ? $_SESSION['user']:[];
     $sql = "SELECT * FROM quanAo";
     $result = mysqli_query($conn, $sql);
  ?>

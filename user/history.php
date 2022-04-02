@@ -3,7 +3,7 @@
     if(session_id() == '')
         session_start();
     isset($_SESSION['user']) ? $user = $_SESSION['user']['id']:header('Location: /shopg8/login.php');
-    $sql = "SELECT * FROM users, donhang_chitiet, donhang, quanao WHERE donhang_chitiet.idDonHang=donhang.idDonHang and users.id = donhang.idCustomer and quanao.idQuanAo = donhang_chitiet.idQuanAo and idCustomer = '$user'";
+    $sql = "SELECT * FROM users, donhang_chitiet, donhang, quanao WHERE donhang_chitiet.idDonHang=donhang.idDonHang and users.id = donhang.idCustomer and quanao.idQuanAo = donhang_chitiet.idQuanAo and idCustomer = '$user' ORDER BY donhang.idDonHang DESC";
     $result = mysqli_query($conn, $sql);
  ?>
 <!DOCTYPE html>
@@ -66,7 +66,7 @@
                                 $preDH=$row['idDonHang'];
                             if (($STT==0) || ($preDH != $row['idDonHang'])){ 
                                 $STT++;
-                            ?>
+                                ?>
                                 <tr style="background-color: whitesmoke">
                                     <td><?php echo $STT?></td>
                                     <th scope="col"><?php echo $row['idDonHang']?></th>

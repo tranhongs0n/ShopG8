@@ -1,6 +1,7 @@
 <?php
     include '../../connect.php';
     isset($_SESSION['user']) ? $user = $_SESSION['user']:header('Location: ../../login.php');
+
     $idCustomer = $user['id'];
     // Tạo đơn hàng mới
     mysqli_query($conn, "INSERT INTO donHang (idCustomer) VALUES ('$idCustomer')");
@@ -8,6 +9,7 @@
     $sql = "SELECT idDonHang FROM donHang WHERE idCustomer = '$idCustomer' ORDER BY idDonHang DESC";
     $result = mysqli_fetch_assoc(mysqli_query($conn, $sql));
     $idDonHang = $result['idDonHang'];
+    
     $tongTien = 0;
     // Tạo donHang_chitiet.
     // Lấy từ giỏ hàng sang
